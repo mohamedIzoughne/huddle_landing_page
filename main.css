@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #022731;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.4;
+}
+ul {
+  list-style-type: none;
+}
+/* ---------Landing Page---------------- */
+.landing {
+  background-image: url(/images/bg-hero-desktop.svg);
+}
+.landing header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.landing header a {
+  text-decoration: none;
+  color: #022731;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px 60px;
+  box-shadow: 4px 4px 5px 1px #02273128;
+  border-radius: 999999px;
+  -webkit-border-radius: 999999px;
+  -moz-border-radius: 999999px;
+  -ms-border-radius: 999999px;
+  -o-border-radius: 999999px;
+  transition-duration: 0.3s;
+}
+.landing header a:hover {
+  opacity: 0.6;
+}
+
+.landing header .logo img {
+  width: 200px;
+}
+.landing .landing-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  padding-block: 50px;
+  align-items: center;
+}
+.landing-content .introduction h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.landing-content .introduction p {
+  color: #777;
+}
+.special-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 50px;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: #fe52c0;
+  border-radius: 999999px;
+  -webkit-border-radius: 999999px;
+  -moz-border-radius: 999999px;
+  -ms-border-radius: 999999px;
+  -o-border-radius: 999999px;
+  transition-duration: 0.3s;
+}
+.landing-content .landing-image img {
+  max-width: 100%;
+}
+.special-button:hover {
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .landing .landing-content {
+    grid-template-columns: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .landing-content .introduction {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .landing header a {
+    padding: 10px 24px;
+  }
+  .landing {
+    background-image: url(/images/bg-hero-mobile.svg);
+  }
+  .landing-content .introduction h3 {
+    font-size: 2rem;
+  }
+  .landing header .logo img {
+    width: 120px;
+  }
+}
+/*----------------------- Offers-section--------------- */
+.offers {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.offers .offer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 40px 40px;
+  box-shadow: 4px 8px 5px 1px #02273113;
+}
+.offer .text {
+  padding: max(2vw, 13px);
+  flex-basis: 60%;
+}
+.offer .text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.offer .text p {
+  color: #777;
+}
+.offer .image {
+  flex-basis: 30%;
+}
+.offer .image img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .offers .offer {
+    flex-direction: column;
+  }
+  .offer .text {
+    padding: max(2vw, 13px);
+    text-align: center;
+  }
+}
+.start-card {
+  width: fit-content;
+  padding: 20px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translateY(136px);
+  background-color: white;
+  box-shadow: 0px -3px 36px -16px #000000d6;
+}
+.start-card .special-button {
+  box-shadow: 4px 4px 5px 1px #02273117;
+}
+/* ----------------------------------------------------------------- */
+/* ---------------Footer Section---------- */
+footer {
+  background-color: hsl(192deg 100% 9%);
+  padding-block: 100px;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 10px));
+  color: #00252e;
+  gap: 10px;
+}
+footer ul {
+  color: white;
+}
+footer ul li {
+  margin-bottom: 20px;
+}
+footer ul:nth-child(2),
+footer ul:nth-child(3) {
+  padding-top: 40px;
+}
+footer ul:last-child {
+  position: relative;
+}
+footer ul:last-child li {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  footer .container {
+    grid-template-columns: 100%;
+  }
+  footer ul:nth-child(2),
+  footer ul:nth-child(3) {
+    padding-top: 0;
+  }
+  footer ul:last-child {
+    margin-top: 40px;
+  }
+}
